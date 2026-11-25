@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #f7f9f7;
+    color: #14211a;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+}
+
+.font-mono-num {
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes scanLaserSweep {
+  0% {
+    transform: translateY(8%);
+  }
+  100% {
+    transform: translateY(92%);
+  }
+}
+
+.animate-scan-laser {
+  animation: scanLaserSweep 1.3s ease-in-out infinite alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .animate-scan-laser {
+    animation: none;
+  }
+}

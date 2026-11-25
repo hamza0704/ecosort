@@ -1,0 +1,6 @@
+{
+  "name": "EcoSort AI",
+  "description": "AI-powered waste segregation scanner with color-coded dustbin guide, session eco-impact counter, and waste sorting quiz.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
